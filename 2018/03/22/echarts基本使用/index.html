@@ -1,0 +1,928 @@
+<!DOCTYPE html><html class="theme-next muse use-motion" lang="zh-Hans"><head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="echarts,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Amanda_wmy" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="echarts&amp;#x57FA;&amp;#x672C;&amp;#x4F7F;&amp;#x7528;&amp;#xFF08;&amp;#x5305;&amp;#x62EC;&amp;#x5728;vue&amp;#x4E2D;&amp;#x4F7F;&amp;#x7528;echarts&amp;#xFF09; &amp;#x6982;&amp;#x5FF5;&amp;#xFF1A;&amp;#x7528;&amp;#x8F83;&amp;#x5C11;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x5B9E;&amp;#x73B">
+<meta name="keywords" content="echarts">
+<meta property="og:type" content="article">
+<meta property="og:title" content="echarts&#x57FA;&#x672C;&#x4F7F;&#x7528;">
+<meta property="og:url" content="http://yoursite.com/2018/03/22/echarts&#x57FA;&#x672C;&#x4F7F;&#x7528;/index.html">
+<meta property="og:site_name" content="Amanda_wmy">
+<meta property="og:description" content="echarts&amp;#x57FA;&amp;#x672C;&amp;#x4F7F;&amp;#x7528;&amp;#xFF08;&amp;#x5305;&amp;#x62EC;&amp;#x5728;vue&amp;#x4E2D;&amp;#x4F7F;&amp;#x7528;echarts&amp;#xFF09; &amp;#x6982;&amp;#x5FF5;&amp;#xFF1A;&amp;#x7528;&amp;#x8F83;&amp;#x5C11;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x5B9E;&amp;#x73B">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://img.blog.csdn.net/20180309151144659?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQW1hbmRhX3dteQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="http://img.blog.csdn.net/20180309151301743?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQW1hbmRhX3dteQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="http://img.blog.csdn.net/20180309151504540?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQW1hbmRhX3dteQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="http://img.blog.csdn.net/20180309153457712?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQW1hbmRhX3dteQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="http://img.blog.csdn.net/20180309154039256?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQW1hbmRhX3dteQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:updated_time" content="2018-03-22T05:53:48.909Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="echarts&#x57FA;&#x672C;&#x4F7F;&#x7528;">
+<meta name="twitter:description" content="echarts&amp;#x57FA;&amp;#x672C;&amp;#x4F7F;&amp;#x7528;&amp;#xFF08;&amp;#x5305;&amp;#x62EC;&amp;#x5728;vue&amp;#x4E2D;&amp;#x4F7F;&amp;#x7528;echarts&amp;#xFF09; &amp;#x6982;&amp;#x5FF5;&amp;#xFF1A;&amp;#x7528;&amp;#x8F83;&amp;#x5C11;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x5B9E;&amp;#x73B">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20180309151144659?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQW1hbmRhX3dteQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/03/22/echarts&#x57FA;&#x672C;&#x4F7F;&#x7528;/">
+
+
+
+
+
+  <title>echarts&#x57FA;&#x672C;&#x4F7F;&#x7528; | Amanda_wmy</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Amanda_wmy</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            &#x9996;&#x9875;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            &#x5173;&#x4E8E;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            &#x6807;&#x7B7E;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            &#x5206;&#x7C7B;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            &#x5F52;&#x6863;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
+            
+            &#x516C;&#x76CA;404
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-something">
+          <a href="/something" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
+            
+            &#x6709;&#x6599;
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/22/echarts&#x57FA;&#x672C;&#x4F7F;&#x7528;/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Amanda_wmy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://example.com/avtar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Amanda_wmy">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">echarts&#x57FA;&#x672C;&#x4F7F;&#x7528;</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">&#x53D1;&#x8868;&#x4E8E;</span>
+              
+              <time title="&#x521B;&#x5EFA;&#x4E8E;" itemprop="dateCreated datePublished" datetime="2018-03-22T13:51:43+08:00">
+                2018-03-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">&#x5206;&#x7C7B;&#x4E8E;</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/&#x524D;&#x7AEF;/" itemprop="url" rel="index">
+                    <span itemprop="name">&#x524D;&#x7AEF;</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">&#x5B57;&#x6570;&#x7EDF;&#x8BA1;:</span>
+                
+                <span title="&#x5B57;&#x6570;&#x7EDF;&#x8BA1;">
+                  1,398
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x65F6;&#x957F; &#x2248;</span>
+                
+                <span title="&#x9605;&#x8BFB;&#x65F6;&#x957F;">
+                  7
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="echarts&#x57FA;&#x672C;&#x4F7F;&#x7528;&#xFF08;&#x5305;&#x62EC;&#x5728;vue&#x4E2D;&#x4F7F;&#x7528;echarts&#xFF09;"><a href="#echarts&#x57FA;&#x672C;&#x4F7F;&#x7528;&#xFF08;&#x5305;&#x62EC;&#x5728;vue&#x4E2D;&#x4F7F;&#x7528;echarts&#xFF09;" class="headerlink" title="echarts&#x57FA;&#x672C;&#x4F7F;&#x7528;&#xFF08;&#x5305;&#x62EC;&#x5728;vue&#x4E2D;&#x4F7F;&#x7528;echarts&#xFF09;"></a>echarts&#x57FA;&#x672C;&#x4F7F;&#x7528;&#xFF08;&#x5305;&#x62EC;&#x5728;vue&#x4E2D;&#x4F7F;&#x7528;echarts&#xFF09;</h2><ul>
+<li>&#x6982;&#x5FF5;&#xFF1A;&#x7528;&#x8F83;&#x5C11;&#x7684;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x6BD4;&#x8F83;&#x9177;&#x70AB;&#x7684;&#x6570;&#x636E;&#x7EDF;&#x8BA1;&#x8868;.</li>
+<li>&#x8FD9;&#x4E5F;&#x662F;&#x4E00;&#x6B3E;&#x57FA;&#x4E8E;HTML5&#x7684;&#x56FE;&#x5F62;&#x5E93;&#x3002;&#x56FE;&#x5F62;&#x7684;&#x521B;&#x5EFA;&#x4E5F;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF0C;&#x76F4;&#x63A5;&#x5F15;&#x7528;Javascript&#x5373;&#x53EF;&#x3002;&#x4F18;&#x70B9;&#xFF1A;&#x4E00;&#x4E2A;&#x662F;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x5E93;&#x662F;&#x767E;&#x5EA6;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x800C;&#x4E14;&#x4E00;&#x76F4;&#x6709;&#x66F4;&#x65B0;&#xFF0C;&#x76EE;&#x524D;&#x6700;&#x65B0;&#x7684;&#x662F;EChart 4&#xFF1B;&#x7B2C;&#x4E8C;&#x4E2A;&#x662F;&#x8FD9;&#x4E2A;&#x5E93;&#x7684;&#x9879;&#x76EE;&#x6587;&#x6863;&#x6BD4;&#x8F83;&#x8BE6;&#x7EC6;&#xFF0C;&#x6BCF;&#x4E2A;&#x70B9;&#x90FD;&#x8BF4;&#x660E;&#x7684;&#x6BD4;&#x8F83;&#x6E05;&#x695A;&#xFF0C;&#x800C;&#x4E14;&#x662F;&#x4E2D;&#x6587;&#x7684;&#xFF0C;&#x7406;&#x89E3;&#x6BD4;&#x8F83;&#x5BB9;&#x6613;&#xFF1B;&#x7B2C;&#x4E09;&#x70B9;&#x662F;&#x8FD9;&#x4E2A;&#x5E93;&#x652F;&#x6301;&#x7684;&#x56FE;&#x5F62;&#x5F88;&#x4E30;&#x5BCC;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5207;&#x6362;&#x56FE;&#x5F62;&#xFF0C;&#x4F7F;&#x7528;&#x8D77;&#x6765;&#x5F88;&#x65B9;&#x4FBF;&#x3002;</li>
+<li><p>&#x4F7F;&#x7528;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x5F15;&#x7528;Js&#x6587;&#x4EF6;<br><code>&lt;script type=&quot;text/javascript&quot; src=&quot;js/echarts.js&quot;&gt;&lt;/script&gt;</code></li>
+<li>&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x51C6;&#x5907;&#x4E00;&#x4E2A;&#x653E;&#x56FE;&#x8868;&#x7684;&#x5BB9;&#x5668;&#xFF08;&#x753B;&#x5E03;&#xFF09;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x9AD8;&#x5EA6;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x4F1A;&#x663E;&#x793A;<br><code>&lt;div id=&quot;chartmain&quot; style=&quot;width:600px; height: 400px;&quot;&gt;&lt;/div&gt;</code></li>
+<li>&#x7B2C;&#x4E09;&#x6B65;&#xFF1A;echarts.init(dom&#x5BB9;&#x5668;)&#xFF0C;&#x521D;&#x59CB;&#x5316;echarts&#x5B9E;&#x4F8B;,&#x4E00;&#x822C;&#x653E;&#x5728;&#x6700;&#x540E;&#xFF08;<strong>&#x5B9A;&#x4E49;</strong>&#xFF09;<br><code>var myChart = echarts.init(document.getElementById(&apos;chartmain&apos;));</code></li>
+<li>&#x7B2C;&#x56DB;&#x6B65;&#xFF1A; &#x4F7F;&#x7528;&#x5236;&#x5B9A;&#x7684;&#x914D;&#x7F6E;&#x9879;&#x548C;&#x6570;&#x636E;&#x663E;&#x793A;&#x56FE;&#x8868;,&#x8FD9;&#x4E24;&#x6B65;&#x90FD;&#x653E;&#x5728;&#x6700;&#x540E;&#xFF08;<strong>&#x663E;&#x793A;</strong>&#xFF09;<br><code>myChart.setOption(option);</code></li>
+<li>&#x7B2C;&#x4E94;&#x6B65;&#xFF1A;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;&#x3002;&#xFF08;<strong>&#x4F7F;&#x7528;</strong>&#xFF09;<br>&#x5B8C;&#x6574;&#x4EE3;&#x7801;&#x6848;&#x4F8B;&#xFF1A;<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">       //&#x6307;&#x5B9A;&#x56FE;&#x6807;&#x7684;&#x914D;&#x7F6E;&#x548C;&#x6570;&#x636E;</span><br><span class="line">       var option = {</span><br><span class="line">           title:{</span><br><span class="line">               text:&apos;ECharts &#x6570;&#x636E;&#x7EDF;&#x8BA1;&apos;</span><br><span class="line">           },</span><br><span class="line">           tooltip:{},</span><br><span class="line">           legend:{</span><br><span class="line">               data:[&apos;&#x7528;&#x6237;&#x6765;&#x6E90;&apos;]</span><br><span class="line">           },</span><br><span class="line">           xAxis:{</span><br><span class="line">               data:[&quot;Android&quot;,&quot;IOS&quot;,&quot;PC&quot;,&quot;Ohter&quot;]</span><br><span class="line">           },</span><br><span class="line">           yAxis:{</span><br><span class="line"></span><br><span class="line">           },</span><br><span class="line">           series:[{</span><br><span class="line">               name:&apos;&#x8BBF;&#x95EE;&#x91CF;&apos;,</span><br><span class="line">               type:&apos;line&apos;,</span><br><span class="line">               data:[500,200,360,100]</span><br><span class="line">           }]</span><br><span class="line">       };</span><br><span class="line">       //&#x521D;&#x59CB;&#x5316;echarts&#x5B9E;&#x4F8B;</span><br><span class="line">       var myChart = echarts.init(document.getElementById(&apos;chartmain&apos;));</span><br><span class="line"></span><br><span class="line">       //&#x4F7F;&#x7528;&#x5236;&#x5B9A;&#x7684;&#x914D;&#x7F6E;&#x9879;&#x548C;&#x6570;&#x636E;&#x663E;&#x793A;&#x56FE;&#x8868;</span><br><span class="line">       myChart.setOption(option);</span><br><span class="line">   &lt;/script&gt;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<p>&#x6548;&#x679C;&#x5C55;&#x793A;&#xFF1A;<br><img src="http://img.blog.csdn.net/20180309151144659?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQW1hbmRhX3dteQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="&#x8FD9;&#x91CC;&#x5199;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><br>&#x67F1;&#x72B6;&#x56FE;&#x5176;&#x5B9E;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x53EA;&#x8981;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;&#x628A;series&#x91CC;&#x7684;type &#x503C;&#x4FEE;&#x6539;&#x4E3A;&#x201D;bar&#x201D;<br><img src="http://img.blog.csdn.net/20180309151301743?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQW1hbmRhX3dteQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="&#x8FD9;&#x91CC;&#x5199;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><br>&#x997C;&#x56FE;&#x548C;&#x6298;&#x7EBF;&#x56FE;&#x3001;&#x67F1;&#x72B6;&#x56FE;&#x6709;&#x4E00;&#x70B9;&#x533A;&#x522B;&#x3002;&#x4E3B;&#x8981;&#x662F;&#x5728;&#x53C2;&#x6570;&#x548C;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#x4E0A;&#x3002;&#x997C;&#x56FE;&#x6CA1;&#x6709;X&#x8F74;&#x548C;Y&#x8F74;&#x7684;&#x5750;&#x6807;&#xFF0C;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#x4E0A;&#x4E5F;&#x662F;&#x91C7;&#x7528;value &#x548C;name&#x5BF9;&#x5E94;&#x7684;&#x5F62;&#x5F0F;&#x3002;</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">var option = {</span><br><span class="line">    title:{</span><br><span class="line">        text:&apos;ECharts &#x6570;&#x636E;&#x7EDF;&#x8BA1;&apos;</span><br><span class="line">    },            </span><br><span class="line">    series:[{</span><br><span class="line">        name:&apos;&#x8BBF;&#x95EE;&#x91CF;&apos;,</span><br><span class="line">        type:&apos;pie&apos;,    </span><br><span class="line">        radius:&apos;60%&apos;, </span><br><span class="line">        data:[</span><br><span class="line">            {value:500,name:&apos;Android&apos;},</span><br><span class="line">            {value:200,name:&apos;IOS&apos;},</span><br><span class="line">            {value:360,name:&apos;PC&apos;},</span><br><span class="line">            {value:100,name:&apos;Ohter&apos;}</span><br><span class="line">        ]</span><br><span class="line">    }]</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<p>&#x6548;&#x679C;&#xFF1A;<br><img src="http://img.blog.csdn.net/20180309151504540?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQW1hbmRhX3dteQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="&#x8FD9;&#x91CC;&#x5199;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<h3 id="&#x5728;vue&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;echarts"><a href="#&#x5728;vue&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;echarts" class="headerlink" title="&#x5728;vue&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;echarts"></a>&#x5728;vue&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;echarts</h3><p>vue&#x9879;&#x76EE;&#x662F;&#x4F7F;&#x7528; vue-cli &#x811A;&#x624B;&#x67B6;&#x642D;&#x5EFA;</p>
+<ul>
+<li><p>&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x5B89;&#x88C5;echarts&#x4F9D;&#x8D56;<br><code>npm install echarts -S</code><br>&#x4F7F;&#x7528;&#x6DD8;&#x5B9D;&#x955C;&#x50CF;&#xFF1A;<br><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code><br><code>cnpm install echarts -S</code></li>
+<li>&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x5F15;&#x5165;echarts,&#x53EF;&#x5168;&#x5C40;&#x5F15;&#x5165;&#x548C;&#x6309;&#x9700;&#x5F15;&#x5165;</li>
+<li><p>&#x5168;&#x5C40;&#x5F15;&#x5165;</p>
+<ul>
+<li><p><strong>main.js</strong></p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">   // &#x5F15;&#x5165;echarts</span><br><span class="line">import echarts from &apos;echarts&apos;</span><br><span class="line">Vue.prototype.$echarts = echarts</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li><strong>Hello.vue</strong></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;myChart&quot; :style=&quot;{width: &apos;300px&apos;, height: &apos;300px&apos;}&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">   export default {</span><br><span class="line">  name: &apos;hello&apos;,</span><br><span class="line">  data () {</span><br><span class="line">    return {</span><br><span class="line">      msg: &apos;Welcome to Your Vue.js App&apos;</span><br><span class="line">    }</span><br><span class="line">  },</span><br><span class="line">  mounted(){</span><br><span class="line">    this.drawLine();  // &#x521D;&#x59CB;&#x5316;</span><br><span class="line">  },</span><br><span class="line">  methods: {</span><br><span class="line">    drawLine(){</span><br><span class="line">        // &#x57FA;&#x4E8E;&#x51C6;&#x5907;&#x597D;&#x7684;dom&#xFF0C;&#x521D;&#x59CB;&#x5316;echarts&#x5B9E;&#x4F8B;</span><br><span class="line">        let myChart = this.$echarts.init(document.getElementById(&apos;myChart&apos;))</span><br><span class="line">        // &#x7ED8;&#x5236;&#x56FE;&#x8868;</span><br><span class="line">        myChart.setOption({</span><br><span class="line">            title: { text: &apos;&#x5728;Vue&#x4E2D;&#x4F7F;&#x7528;echarts&apos; },</span><br><span class="line">            tooltip: {},</span><br><span class="line">            xAxis: {</span><br><span class="line">                data: [&quot;&#x886C;&#x886B;&quot;,&quot;&#x7F8A;&#x6BDB;&#x886B;&quot;,&quot;&#x96EA;&#x7EBA;&#x886B;&quot;,&quot;&#x88E4;&#x5B50;&quot;,&quot;&#x9AD8;&#x8DDF;&#x978B;&quot;,&quot;&#x889C;&#x5B50;&quot;]</span><br><span class="line">            },</span><br><span class="line">            yAxis: {},</span><br><span class="line">            series: [{</span><br><span class="line">                name: &apos;&#x9500;&#x91CF;&apos;,</span><br><span class="line">                type: &apos;bar&apos;,</span><br><span class="line">                data: [5, 20, 36, 10, 10, 20]</span><br><span class="line">            }]</span><br><span class="line">        });</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<blockquote>
+<p> &#x8FD9;&#x91CC;echarts&#x521D;&#x59CB;&#x5316;&#x5E94;&#x5728;&#x94A9;&#x5B50;&#x51FD;&#x6570;mounted()&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x662F;&#x5728;el &#x88AB;&#x65B0;&#x521B;&#x5EFA;&#x7684; vm.$el &#x66FF;&#x6362;&#xFF0C;&#x5E76;&#x6302;&#x8F7D;&#x5230;&#x5B9E;&#x4F8B;&#x4E0A;&#x53BB;&#x4E4B;&#x540E;&#x8C03;&#x7528;</p>
+</blockquote>
+<ul>
+<li>&#x6309;&#x9700;&#x5F15;&#x5165;<ul>
+<li><strong>Hello.vue</strong><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"> // &#x5F15;&#x5165;&#x57FA;&#x672C;&#x6A21;&#x677F;</span><br><span class="line">let echarts = require(&apos;echarts/lib/echarts&apos;)</span><br><span class="line">// &#x5F15;&#x5165;&#x67F1;&#x72B6;&#x56FE;&#x7EC4;&#x4EF6;</span><br><span class="line">require(&apos;echarts/lib/chart/bar&apos;)</span><br><span class="line">// &#x5F15;&#x5165;&#x63D0;&#x793A;&#x6846;&#x548C;title&#x7EC4;&#x4EF6;</span><br><span class="line">require(&apos;echarts/lib/component/tooltip&apos;)</span><br><span class="line">require(&apos;echarts/lib/component/title&apos;)</span><br><span class="line">export default {</span><br><span class="line"> name: &apos;hello&apos;,</span><br><span class="line"> data() {</span><br><span class="line">   return {</span><br><span class="line">     msg: &apos;Welcome to Your Vue.js App&apos;</span><br><span class="line">   }</span><br><span class="line"> },</span><br><span class="line"> mounted() {</span><br><span class="line">   this.drawLine(); //&#x521D;&#x59CB;&#x5316;</span><br><span class="line"> },</span><br><span class="line"> methods: {</span><br><span class="line">   drawLine() {</span><br><span class="line">     // &#x57FA;&#x4E8E;&#x51C6;&#x5907;&#x597D;&#x7684;dom&#xFF0C;&#x521D;&#x59CB;&#x5316;echarts&#x5B9E;&#x4F8B;</span><br><span class="line">     let myChart = echarts.init(document.getElementById(&apos;myChart&apos;))</span><br><span class="line">     // &#x7ED8;&#x5236;&#x56FE;&#x8868;</span><br><span class="line">     myChart.setOption({</span><br><span class="line">       title: { text: &apos;ECharts &#x5165;&#x95E8;&#x793A;&#x4F8B;&apos; },</span><br><span class="line">       tooltip: {},</span><br><span class="line">       xAxis: {</span><br><span class="line">         data: [&quot;&#x886C;&#x886B;&quot;, &quot;&#x7F8A;&#x6BDB;&#x886B;&quot;, &quot;&#x96EA;&#x7EBA;&#x886B;&quot;, &quot;&#x88E4;&#x5B50;&quot;, &quot;&#x9AD8;&#x8DDF;&#x978B;&quot;, &quot;&#x889C;&#x5B50;&quot;]</span><br><span class="line">       },</span><br><span class="line">       yAxis: {},</span><br><span class="line">       series: [{</span><br><span class="line">         name: &apos;&#x9500;&#x91CF;&apos;,</span><br><span class="line">         type: &apos;bar&apos;,</span><br><span class="line">         data: [5, 20, 36, 10, 10, 20]</span><br><span class="line">       }]</span><br><span class="line">     });</span><br><span class="line">   }</span><br><span class="line"> }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://img.blog.csdn.net/20180309153457712?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQW1hbmRhX3dteQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="&#x8FD9;&#x91CC;&#x5199;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><br>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;&#x65F6;&#x7684;&#x6848;&#x4F8B;&#xFF1A;<br></p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">      &lt;div id=&quot;chart&quot; ref=&quot;chart&quot;&gt;&lt;/div&gt; //&#x753B;&#x5E03;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">import echarts from &quot;echarts&quot;;  //&#x5F15;&#x5165;echarts</span><br><span class="line">export default {</span><br><span class="line">  data() {</span><br><span class="line">    return {</span><br><span class="line">    };</span><br><span class="line">  },</span><br><span class="line">  created() {},</span><br><span class="line">  mounted() {</span><br><span class="line">    this.$nextTick(() =&gt; {     //&#x521D;&#x59CB;&#x5316;</span><br><span class="line">      this.initChart(); </span><br><span class="line">      this.getChartData();</span><br><span class="line">      window.addEventListener(&quot;resize&quot;, () =&gt; {</span><br><span class="line">        this.resize();           //&#x76D1;&#x542C;&#x5C4F;&#x5E55;&#x5927;&#x5C0F;&#xFF0C;&#x6765;&#x5237;&#x65B0;&#x753B;&#x5E03;</span><br><span class="line">      });</span><br><span class="line">    });</span><br><span class="line">  },</span><br><span class="line">  methods: {</span><br><span class="line">    //&#x67E5;&#x8BE2;&#x56FE;&#x8868;&#x6570;&#x636E;  &#x52A8;&#x6001;&#x7684;&#x6539;&#x53D8;&#x6570;&#x636E;</span><br><span class="line">    getChartData() {</span><br><span class="line">      // this.chart.setOption({</span><br><span class="line">      //   xAxis: {</span><br><span class="line">      //     data: this.xAxisdata</span><br><span class="line">      //   },</span><br><span class="line">      //   series: {</span><br><span class="line">      //     data: this.seriesdata</span><br><span class="line">      //   }</span><br><span class="line">      // });</span><br><span class="line">      this.chart.hideLoading();</span><br><span class="line">    },</span><br><span class="line">    //&#x521D;&#x59CB;&#x5316;&#x56FE;&#x8868;</span><br><span class="line">    initChart() {</span><br><span class="line">      let option = {</span><br><span class="line">        title: {</span><br><span class="line">        },</span><br><span class="line">         tooltip: {</span><br><span class="line">          trigger: &quot;axis&quot;,</span><br><span class="line">          formatter: &quot;&#x65F6;&#x95F4; : {b}&lt;br /&gt;&#x538B;&#x529B;&#xFF1A;{c}Mpa&quot;,</span><br><span class="line">          axisPointer: {</span><br><span class="line">            type: &quot;line&quot; // &#x9ED8;&#x8BA4;&#x4E3A;&#x76F4;&#x7EBF;&#xFF0C;&#x53EF;&#x9009;&#x4E3A;&#xFF1A;&apos;line&apos; | &apos;shadow&apos;</span><br><span class="line">          }</span><br><span class="line">        },</span><br><span class="line">        grid: {</span><br><span class="line">          left: &quot;3%&quot;,</span><br><span class="line">          right: &quot;4%&quot;,</span><br><span class="line">          bottom: &quot;3%&quot;,</span><br><span class="line">          top: &quot;3%&quot;,</span><br><span class="line">          containLabel: true</span><br><span class="line">        },</span><br><span class="line">        xAxis: {</span><br><span class="line">          type: &quot;category&quot;,</span><br><span class="line">          boundaryGap: false,</span><br><span class="line">          data: [&quot;13:20&quot;, &quot;13:30&quot;, &quot;13:40&quot;, &quot;13:50&quot;, &quot;13:60&quot;, &quot;13:70&quot;, &quot;13:80&quot;, &quot;13:90&quot;, &quot;13:100&quot;, &quot;13:110&quot;]</span><br><span class="line">        },</span><br><span class="line">        yAxis: {</span><br><span class="line">          type: &quot;value&quot;,</span><br><span class="line">          axisLabel: {</span><br><span class="line">            formatter: &quot;{value}&quot;</span><br><span class="line">          }</span><br><span class="line">        },</span><br><span class="line">        series: [</span><br><span class="line">          {</span><br><span class="line">            name: &quot;&#x538B;&#x529B;&quot;,</span><br><span class="line">            type: &quot;line&quot;,</span><br><span class="line">            symbol:&quot;circle&quot;,</span><br><span class="line">            symbolSize:[8,8],</span><br><span class="line">            itemStyle:{color:&quot;#43B9E1&quot;},</span><br><span class="line">            lineStyle:{</span><br><span class="line">              color:&quot;#43B9E1&quot;</span><br><span class="line">            },</span><br><span class="line">            data: [8, </span><br><span class="line">              {</span><br><span class="line">                value : 6,</span><br><span class="line">                label: {</span><br><span class="line">                  show:true,</span><br><span class="line">                  formatter:&quot;&#x5145;&#x88C5;&#x5F00;&#x59CB;&quot;,</span><br><span class="line">                  fontSize:&quot;18&quot;</span><br><span class="line">                },</span><br><span class="line">                symbol:&quot;roundRect&quot;,</span><br><span class="line">                symbolSize:[8,16],</span><br><span class="line">                itemStyle:{</span><br><span class="line">                  color:&quot;#FB9B00&quot;</span><br><span class="line">                }</span><br><span class="line">              },</span><br><span class="line">              7,13,18, </span><br><span class="line">              {</span><br><span class="line">              &lt;!--&#x4E3A;&#x67D0;&#x4E00;&#x70B9;&#x7684;&#x6570;&#x636E;&#x505A;&#x6837;&#x5F0F;--&gt;</span><br><span class="line">                value : 19,</span><br><span class="line">                symbol:&quot;roundRect&quot;,</span><br><span class="line">                symbolSize:[8,16],</span><br><span class="line">                label: {</span><br><span class="line">                  show:true,</span><br><span class="line">                  formatter:&quot;&#x5145;&#x88C5;&#x7ED3;&#x675F;&quot;,</span><br><span class="line">                  fontSize:&quot;18&quot;</span><br><span class="line">                },</span><br><span class="line">                itemStyle:{</span><br><span class="line">                  color:&quot;#3FC7C5&quot;</span><br><span class="line">                }</span><br><span class="line">            }, </span><br><span class="line">            12, 11,10,9</span><br><span class="line">            ],</span><br><span class="line">          },</span><br><span class="line">        ]</span><br><span class="line">      };</span><br><span class="line"></span><br><span class="line">      this.chart = echarts.init(this.$refs.chart);   //&#x5B9A;&#x4E49;</span><br><span class="line">      this.chart.showLoading();  //&#x7B49;&#x5F85;&#x7684;&#x663E;&#x793A;</span><br><span class="line">      this.chart.setOption(option);  //&#x5C55;&#x793A;</span><br><span class="line">      this.chart.resize(); //&#x5237;&#x65B0;&#x753B;&#x5E03;</span><br><span class="line">    },</span><br><span class="line">    resize() {</span><br><span class="line">      if (this.chart) {</span><br><span class="line">        this.chart.resize();</span><br><span class="line">      }</span><br><span class="line">    }</span><br><span class="line">  },</span><br><span class="line">  computed: {},</span><br><span class="line">  watch: {}</span><br><span class="line">};</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;style scoped&gt;</span><br><span class="line">#chart {</span><br><span class="line">  width: 100%;</span><br><span class="line">  height: 400px;</span><br><span class="line">}</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p><img src="http://img.blog.csdn.net/20180309154039256?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQW1hbmRhX3dteQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="&#x8FD9;&#x91CC;&#x5199;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script>
+      
+    </div>
+    
+    
+    
+
+    
+<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------&#x672C;&#x6587;&#x7ED3;&#x675F;<i class="fa fa-paw"></i>&#x611F;&#x8C22;&#x60A8;&#x7684;&#x9605;&#x8BFB;-------------</div>
+    
+</div>
+  
+</div>
+    
+
+    
+    
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/echarts/" rel="tag"><i class="fa fa-tag"></i> echarts</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/20/Hexo&#x6559;&#x7A0B;/" rel="next" title="Hexo&#x6559;&#x7A0B;">
+                <i class="fa fa-chevron-left"></i> Hexo&#x6559;&#x7A0B;
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">&#x5206;&#x4EAB;&#x5230;&#xFF1A;</span>
+<a class="jiathis_button_fav">&#x6536;&#x85CF;&#x5939;</a>
+<a class="jiathis_button_copy">&#x590D;&#x5236;&#x7F51;&#x5740;</a>
+<a class="jiathis_button_email">&#x90AE;&#x4EF6;</a>
+<a class="jiathis_button_weixin">&#x5FAE;&#x4FE1;</a>
+<a class="jiathis_button_qzone">QQ&#x7A7A;&#x95F4;</a>
+<a class="jiathis_button_tqq">&#x817E;&#x8BAF;&#x5FAE;&#x535A;</a>
+<a class="jiathis_button_douban">&#x8C46;&#x74E3;</a>
+<a class="jiathis_button_share">&#x4E00;&#x952E;&#x5206;&#x4EAB;</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">&#x66F4;&#x591A;</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            &#x6587;&#x7AE0;&#x76EE;&#x5F55;
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            &#x7AD9;&#x70B9;&#x6982;&#x89C8;
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="http://example.com/avtar.png" alt="Amanda_wmy">
+            
+              <p class="site-author-name" itemprop="name">Amanda_wmy</p>
+              <p class="site-description motion-element" itemprop="description">&#x5973;&#x795E;......&#x7CBE;&#x75C5;</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#echarts&#x57FA;&#x672C;&#x4F7F;&#x7528;&#xFF08;&#x5305;&#x62EC;&#x5728;vue&#x4E2D;&#x4F7F;&#x7528;echarts&#xFF09;"><span class="nav-number">1.</span> <span class="nav-text">echarts&#x57FA;&#x672C;&#x4F7F;&#x7528;&#xFF08;&#x5305;&#x62EC;&#x5728;vue&#x4E2D;&#x4F7F;&#x7528;echarts&#xFF09;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#&#x5728;vue&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;echarts"><span class="nav-number">1.1.</span> <span class="nav-text">&#x5728;vue&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;echarts</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&#xA9; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Amanda_wmy</span>
+
+  
+</div>
+
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  &#x672C;&#x7AD9;&#x8BBF;&#x5BA2;&#x6570;:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+ <!-- <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+-->
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">&#x535A;&#x5BA2;&#x5168;&#x7AD9;&#x5171;2.3k&#x5B57;</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+
+  
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+undefined
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script></body></html>
